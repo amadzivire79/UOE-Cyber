@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Abinel Madzivire - Cybersecurity e-Portfolio">
+  <title>Abinel Madzivire | Cybersecurity e-Portfolio</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: #172033;
+      background: #f5f7fb;
+    }
+
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #0b1630;
+      padding: 15px 6%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.15);
+    }
+
+    .logo {
+      color: white;
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #63d5ff;
+    }
+
+    .hero {
+      min-height: 82vh;
+      display: flex;
+      align-items: center;
+      padding: 80px 8%;
+      background: linear-gradient(135deg, #0b1630 0%, #123c69 55%, #087ea4 100%);
+      color: white;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .hero .tag {
+      display: inline-block;
+      padding: 7px 14px;
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 30px;
+      margin-bottom: 22px;
+      font-size: 0.9rem;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 5rem);
+      line-height: 1.05;
+      margin-bottom: 20px;
+    }
+
+    .hero h2 {
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      max-width: 760px;
+      font-size: 1.1rem;
+      color: #e8f5fb;
+      margin-bottom: 30px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 7px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid white;
+      color: white;
+    }
+
+    .btn.primary {
+      background: white;
+      color: #0b1630;
+    }
+
+    .section {
+      padding: 75px 8%;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h2 {
+      font-size: 2rem;
+      margin-bottom: 14px;
+      color: #0b1630;
+    }
+
+    .section-intro {
+      max-width: 800px;
+      margin-bottom: 35px;
+      color: #536174;
+    }
+
+    .about-grid,
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .card {
+      background: white;
+      padding: 28px;
+      border-radius: 12px;
+      box-shadow: 0 5px 22px rgba(20,35,60,0.08);
+      border: 1px solid #e7ebf2;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: #123c69;
+    }
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .skill {
+      background: #e7f5fa;
+      color: #0b526c;
+      padding: 8px 13px;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .highlight {
+      background: #0b1630;
+      color: white;
+      border-radius: 14px;
+      padding: 35px;
+      margin-top: 30px;
+    }
+
+    .highlight h3 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      background: #0b1630;
+      color: #dce8f2;
+      text-align: center;
+      padding: 35px 8%;
+    }
+
+    footer a {
+      color: #63d5ff;
+      text-decoration: none;
+    }
+
+    @media (max-width: 800px) {
+      nav {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+
+      .about-grid,
+      .cards {
+        grid-template-columns: 1fr;
+      }
+
+      .hero {
+        min-height: 75vh;
+        padding: 65px 7%;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a class="logo" href="#home">AM | Cybersecurity</a>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="home">
+    <div class="hero-content">
+      <span class="tag">Cybersecurity E-Portfolio</span>
+      <h1>Abinel Madzivire</h1>
+      <h2>Cybersecurity Student | Fibre Optic Engineer | Technology Professional</h2>
+      <p>
+        Welcome to my professional e-portfolio. This website documents my academic
+        development, practical cybersecurity skills, projects and continuing
+        professional development as I build a career in cybersecurity.
+      </p>
+
+      <div class="buttons">
+        <a class="btn primary" href="#projects">Explore My Work</a>
+        <a class="btn" href="#about">About Me</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="section" id="about">
+      <h2>About Me</h2>
+      <p class="section-intro">
+        I am developing my professional career at the intersection of technology,
+        networking and cybersecurity. My experience in fibre optic engineering,
+        education and environmental work has given me a broad perspective on
+        problem-solving, communication, technical investigation and professional
+        responsibility.
+      </p>
+
+      <div class="about-grid">
+        <div class="card">
+          <h3>Academic Development</h3>
+          <p>
+            I am undertaking postgraduate study in Cybersecurity, developing
+            knowledge of information security, networks, vulnerabilities,
+            threat modelling and cyber risk.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Technical Experience</h3>
+          <p>
+            My fibre optic engineering experience has strengthened my practical
+            understanding of telecommunications networks, connectivity,
+            troubleshooting and the importance of securing network infrastructure.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Professional Goal</h3>
+          <p>
+            My goal is to progress into a cybersecurity career where I can combine
+            technical knowledge, analytical thinking and practical experience to
+            help organisations identify and manage cyber risks.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2>Cybersecurity Skills</h2>
+      <p class="section-intro">
+        The following areas represent my developing technical and professional
+        capabilities. Evidence and project work will be added to this portfolio
+        as my studies progress.
+      </p>
+
+      <div class="card">
+        <div class="skills">
+          <span class="skill">Network Security</span>
+          <span class="skill">Threat Modelling</span>
+          <span class="skill">Vulnerability Assessment</span>
+          <span class="skill">Risk Assessment</span>
+          <span class="skill">Nmap</span>
+          <span class="skill">Nessus</span>
+          <span class="skill">Kali Linux</span>
+          <span class="skill">Linux</span>
+          <span class="skill">Networking</span>
+          <span class="skill">Python</span>
+          <span class="skill">Git & GitHub</span>
+          <span class="skill">Cybersecurity Research</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2>Projects & Evidence</h2>
+      <p class="section-intro">
+        This section will contain selected academic and practical cybersecurity
+        projects, technical reports, screenshots, reflective evidence and
+        demonstrations of skills developed during my MSc.
+      </p>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Vulnerability Assessment</h3>
+          <p>
+            Practical work involving vulnerability scanning, network enumeration,
+            analysis of findings and consideration of appropriate security controls.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Threat Modelling</h3>
+          <p>
+            Analysis of threats and security risks affecting cyber-physical and
+            networked systems, with emphasis on identifying dependencies,
+            attack surfaces and appropriate mitigations.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Network Security Research</h3>
+          <p>
+            Developing research interests around the security of last-mile
+            telecommunications and fibre-to-the-premises network environments.
+          </p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <h3>Portfolio Development</h3>
+        <p>
+          New projects, assessment evidence, certificates, reflective accounts
+          and technical demonstrations will be added here throughout my
+          cybersecurity studies and professional development.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Professional Experience</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>Fibre Optic Engineering</h3>
+          <p>
+            Practical experience installing, testing, maintaining and
+            troubleshooting fibre broadband connectivity and customer network
+            equipment.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Education</h3>
+          <p>
+            Extensive teaching experience, including mathematics and other
+            subjects, supporting strong communication, analytical thinking and
+            mentoring skills.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Environmental Work</h3>
+          <p>
+            Professional and practical experience in ecology and environmental
+            fieldwork, contributing to a multidisciplinary professional profile.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contact">
+      <h2>Contact</h2>
+      <p class="section-intro">
+        I welcome opportunities to connect with professionals, researchers,
+        employers and fellow cybersecurity practitioners.
+      </p>
+
+      <div class="card">
+        <p><strong>GitHub:</strong> <a href="#" target="_blank">Add your GitHub profile</a></p>
+        <p><strong>LinkedIn:</strong> <a href="#" target="_blank">Add your LinkedIn profile</a></p>
+        <p><strong>Email:</strong> Add your professional email address</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Abinel Madzivire | Cybersecurity E-Portfolio</p>
+    <p>Built with HTML, CSS and GitHub Pages.</p>
+  </footer>
+
+</body>
+</html>
